@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden; /* Cố định 1 màn hình điện thoại */
+    background-color: transparent; /* QUAN TRỌNG: Không được để màu đặc ở đây */
+}
+
+/* Video nền cố định phía sau toàn bộ nội dung */
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2; /* Nằm dưới cùng */
+}
+
+/* Lớp phủ Gradient đen tối dần ở phía dưới */
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Đen đậm ở dưới (0%) và trong suốt ở trên (85%) */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 85%);
+    z-index: -1; /* Nằm trên video nhưng dưới nội dung */
+    pointer-events: none;
+}
+
+.portal-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.main-logo {
+    width: 120px; /* Thu nhỏ logo cho vừa màn hình mobile */
+    height: auto;
+    margin-bottom: 5px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+.welcome-text {
+    font-family: 'Charm', cursive;
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.welcome-text span {
+    font-family: 'Montserrat', sans-serif;
+    color: #D4AF37; /* Vàng Gold đặc trưng */
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 2px;
+}
+
+.menu-grid {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Thu hẹp khoảng cách giữa các nút */
+}
+
+/* Nút bấm Gradient chéo trong suốt */
+.dark-glass-card {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: linear-gradient(120deg, rgba(26, 54, 93, 0.9) 0%, rgba(26, 54, 93, 0.4) 100%);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.card-text h3 {
+    font-size: 0.8rem;
+    color: #D4AF37;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-text p {
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.2;
+}
+
+.footer {
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.6rem;
+    text-align: center;
+}

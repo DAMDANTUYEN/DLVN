@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>VinaVista Mobile Pro - Hành Trình Tinh Hoa</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="../assest/styles/map.css" />
+    <script src="../assest/scripts/map.js" defer></script>
+    
+</head>
+<body>
+
+    <div class="day-selector" id="daySelector"></div>
+
+    <div class="controls">
+        <button class="btn" id="prevBtn" onclick="navigate(-1)">Trước</button>
+        <div id="status"><span>Hành trình</span><div id="pointName">ĐIỂM 1</div></div>
+        <button class="btn" id="nextBtn" onclick="navigate(1)">Tiếp</button>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
+</body>
+</html>

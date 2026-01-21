@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chương Trình Tour - Tây Bắc Tinh Hoa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://rawcdn.githack.com/blasten/turn.js/master/turn.min.js"></script>
+    <link rel="stylesheet" href="../assest/styles/book.css">
+    <script src="../assest/scripts/book1.js" defer></script>
+</head>
+<body>
+
+    <div id="swipe-guide">
+        <div class="finger-icon"></div>
+        <p style="color:#D4AF37; margin-top:15px; font-family:'Charm'; font-size: 1.1rem;">Vuốt hoặc sử dụng các nút bên dưới</p>
+    </div>
+
+    <img src="../assest/images/logo.png" alt="VinaVista" class="brand-logo">
+
+    <div id="flipbook-wrapper">
+        <div id="flipbook-container">
+            <div id="flipbook">
+                <div class="page"><img src="../assest/images/CTDL/1.jpg"></div>
+                <div class="page"><img src="../assest/images/CTDL/2.jpg"></div>
+                <div class="page"><img src="../assest/images/CTDL/3.jpg"></div>
+                <div class="page"><img src="../assest/images/CTDL/4.jpg"></div>
+                <div class="page"><img src="../assest/images/CTDL/5.jpg"></div>
+                <div class="page"><img src="../assest/images/CTDL/6.jpg"></div>
+                <div class="page"><img src="../assest/images/CTDL/7.jpg"></div>
+                <div class="page"><img src="../assest/images/CTDL/8.jpg"></div>
+            </div>
+        </div>
+        <div class="page-counter"><span id="current-page">1</span> / 8</div>
+    </div>
+
+    <div class="bottom-nav-bar">
+        <div class="nav-arrow prev-arrow" onclick="$('#flipbook').turn('previous')">❮</div>
+        
+        <a href="../page/portal.html" class="btn-back">QUAY LẠI</a>
+        
+        <div class="nav-arrow next-arrow" onclick="$('#flipbook').turn('next')">❯</div>
+    </div>
+
+    
+</body>
+</html>

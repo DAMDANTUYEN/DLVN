@@ -1,0 +1,133 @@
+/* --- Phông nền Onboarding --- */
+.onboarding-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #001f3f; /* Màu Navy đậm sang trọng */
+    background-image: linear-gradient(135deg, #001f3f 0%, #000000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Luôn nằm trên cùng */
+    transition: opacity 0.8s ease, visibility 0.8s;
+}
+
+.onboarding-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.onboarding-logo {
+    width: 150px;
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease;
+}
+
+.onboarding-text {
+    font-family: 'Charm', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.btn-start {
+    background: #D4AF37;
+    color: #001f3f;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    transition: transform 0.3s;
+}
+
+.btn-start:active {
+    transform: scale(0.9);
+}
+
+/* Hiệu ứng biến mất */
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* --- Giữ nguyên các Style cũ phía dưới --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body, html { height: 100%; overflow: hidden; font-family: 'Montserrat', sans-serif; }
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 120px 0;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+    will-change: transform;
+    background-color: #000;     
+}
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+
+.header-mask {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 200px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1;
+}
+
+.header { position: relative; z-index: 2; }
+.main-logo { width: 160px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.6)); }
+
+.content {
+    position: relative; z-index: 2; text-align: center; color: white; width: 90%;
+    margin-top: -100px;
+}
+
+.title {
+    font-family: 'Charm', cursive; font-size: 3.2rem; font-weight: 700;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.7);
+}
+
+.title span {
+    font-family: 'Montserrat', sans-serif; font-size: 2.5rem;
+    color: #D4AF37; display: block; letter-spacing: 5px; margin-top: 5px;
+}
+
+.divider { width: 40px; height: 2px; background: #D4AF37; margin: 15px auto; }
+
+.subtitle { font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; }
+
+.footer-action { position: relative; z-index: 2; margin-bottom: 40px; }
+
+.btn-book {
+    background: #D4AF37; color: #1a365d; text-decoration: none;
+    padding: 18px 50px; border-radius: 4px; font-weight: 700;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VinaVista Travel - Hành Trình Tinh Hoa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assest/styles/landingpage.css">
+    <script src="assest/scripts/landingpage.js" defer></script>
+</head>
+<body>
+
+    <div id="onboarding" class="onboarding-overlay">
+        <div class="onboarding-content">
+            <img src="assest/images/logo.png" alt="VinaVista Logo" class="onboarding-logo">
+            <h2 class="onboarding-text">Sẵn sàng cho một hành trình tinh hoa?</h2>
+            <button class="btn-start" onclick="startExperience()">KHÁM PHÁ NGAY</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="video-container">
+            <video muted loop playsinline id="bg-video">
+                <source src="assest/videos/background.mp4" type="video/mp4">
+            </video>
+
+            <audio id="bg-audio" loop>
+                <source src="assest/music/music.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="overlay"></div>
+            <div class="header-mask"></div>
+
+            <header class="header">
+                <img src="assest/images/logo.png" alt="VinaVista Logo" class="main-logo">
+            </header>
+
+            <main class="content">
+                <h1 class="title">Hành Trình<br><span>TINH HOA</span></h1>
+                <div class="divider"></div>
+                <p class="subtitle">Khám phá Tây Bắc cùng VinaVista</p>
+            </main>
+
+            <footer class="footer-action">
+                <a href="javascript:void(0)" onclick="goToPortal()" class="btn-book">ĐẶT TOUR NGAY</a>
+            </footer>
+        </div>
+    </div>
+
+    
+</body>
+</html>

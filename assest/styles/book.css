@@ -1,0 +1,117 @@
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body {
+    background: radial-gradient(circle, #002d5a 0%, #001226 100%);
+    background-image: url('https://www.transparenttextures.com/patterns/dark-wood.png');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 15px;
+}
+
+/* --- LOGO --- */
+.brand-logo { width: 70px; margin-bottom: 5px; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5)); }
+
+/* --- FLIPBOOK CONTAINER --- */
+#flipbook-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#flipbook-container {
+    width: 85vw;
+    height: 58vh; 
+    max-width: 400px;
+    max-height: 520px;
+    background: #fff;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8));
+}
+
+.page img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
+
+.page-counter {
+    margin-top: 8px;
+    color: #D4AF37;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* --- CỤM ĐIỀU HƯỚNG HÀNG NGANG (HORIZONTAL CONTROLS) --- */
+.bottom-nav-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 10px 35px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Khoảng cách giữa các nút */
+    background: linear-gradient(to top, #001226 85%, transparent);
+    z-index: 100;
+}
+
+/* Nút mũi tên */
+.nav-arrow {
+    width: 42px;
+    height: 42px;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 50%;
+    color: #D4AF37;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transition: all 0.2s ease;
+}
+
+.nav-arrow:active { background: rgba(212, 175, 55, 0.4); transform: scale(0.9); }
+.nav-arrow.disabled { opacity: 0.1; pointer-events: none; }
+
+/* Nút Quay lại chính giữa */
+.btn-back {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+    color: #001f3f;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 25px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    white-space: nowrap; /* Tránh nhảy dòng chữ */
+}
+
+/* Hướng dẫn Onboarding */
+#swipe-guide {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+}
+.finger-icon {
+    width: 50px; height: 50px;
+    background: url('https://cdn-icons-png.flaticon.com/512/1620/1620581.png') no-repeat center/contain;
+    filter: invert(1);
+    animation: swipe-move 2s infinite;
+}
+@keyframes swipe-move {
+    0% { transform: translateX(30px); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateX(-30px); opacity: 0; }
+}
