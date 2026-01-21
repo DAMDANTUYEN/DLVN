@@ -4,50 +4,49 @@
     "day_1": {
       "label": "Ngày 1: Hà Nội - Sa Pa",
       "locations": [
-        { "idx": 1, "type": "start", "name": "Hà Nội", "coords": [21.0285, 105.8542], "desc": "Khởi hành từ Thủ đô, bắt đầu hành trình chinh phục cung đường Tây Bắc." },
-        { "idx": 2, "type": "hotel", "name": "Pistachio Hotel Sapa", "coords": [22.3346, 103.8387], "desc": "Khởi hành từ Thủ đô, bắt đầu hành trình chinh phục cung đường Tây Bắc." },
-        { "idx": 3, "type": "sightseeing", "name": "Sun World Fansipan Legend", "coords": [22.3400, 103.8263], "desc": "Chinh phục đỉnh Fansipan - Nóc nhà Đông Dương bằng hệ thống cáp treo kỷ lục." },
-        { "idx": 4, "type": "market", "name": "Chợ đêm Sa Pa", "coords": [22.3384, 103.8515], "desc": "Thưởng thức ẩm thực nướng đặc sản và tìm hiểu văn hóa chợ tình vùng cao." },
-        { "idx": 5, "type": "hotel", "name": "Pistachio Hotel Sapa", "coords": [22.3346, 103.8387], "desc": "Khởi hành từ Thủ đô, bắt đầu hành trình chinh phục cung đường Tây Bắc." }
-
+        { "idx": 1, "type": "start", "name": "Hà Nội", "coords": [21.0285, 105.8542], "desc": "Bắt đầu hành trình từ Thủ đô Hà Nội ngàn năm văn hiến, xe và hướng dẫn viên đưa đoàn khởi hành đi Sa Pa theo con đường cao tốc Nội Bài - Lào Cai hiện đại, mở ra khung cảnh đồi núi trập trùng của vùng trung du Bắc Bộ." },
+        { "idx": 2, "type": "hotel", "name": "Pistachio Hotel Sapa", "coords": [22.3346, 103.8387], "desc": "Check-in tại khách sạn Pistachio - 'ốc đảo nghỉ dưỡng' giữa lòng Sa Pa. Nổi tiếng với bể bơi vô cực dát vàng và tầm nhìn ôm trọn thung lũng Mường Hoa, đây là nơi lý tưởng để thư giãn sau chuyến đi dài." },
+        { "idx": 3, "type": "sightseeing", "name": "Sun World Fansipan Legend", "coords": [22.3400, 103.8263], "desc": "Chinh phục 'Nóc nhà Đông Dương' ở độ cao 3.143m. Trải nghiệm hệ thống cáp treo đạt nhiều kỷ lục thế giới, ngắm nhìn toàn cảnh dãy Hoàng Liên Sơn hùng vĩ và bái Phật tại quần thể tâm linh kỳ vĩ trên đỉnh núi." },
+        { "idx": 4, "type": "market", "name": "Chợ đêm Sa Pa", "coords": [22.3384, 103.8515], "desc": "Hòa mình vào không khí nhộn nhịp của chợ đêm vùng cao. Thưởng thức thế giới ẩm thực nướng phong phú từ thịt xiên, trứng nướng đến thắng cố, đồng thời tìm hiểu nét văn hóa đặc sắc qua những sản phẩm thổ cẩm thủ công." },
+        { "idx": 5, "type": "hotel", "name": "Pistachio Hotel Sapa", "coords": [22.3346, 103.8387], "desc": "Nghỉ đêm tại Pistachio Hotel Sapa. Tận hưởng không gian sang trọng kết hợp hài hòa giữa nét văn hóa bản địa và phong cách thiết kế đương đại trong cái se lạnh đặc trưng của thị trấn sương mù." }
       ]
     },
     "day_2": {
-      "label": "Ngày 2: Sắc màu Sa Pa",
+      "label": "Ngày 2: Sắc màu Sa Pa - Điện Biên",
       "locations": [
-        { "idx": 6, "type": "culture", "name": "Bản Cát Cát", "coords": [22.3297, 103.8321], "desc": "Khám phá ngôi làng cổ xinh đẹp của người H'Mông bên thác nước thơ mộng." },
-        { "idx": 7, "type": "nature", "name": "Cổng Trời Ô Quy Hồ", "coords": [22.3551, 103.7630], "desc": "Ngắm hoàng hôn và săn mây tại một trong 'Tứ đại đỉnh đèo' hùng vĩ nhất VN." },
-        { "idx": 8, "type": "hotel", "name": "Khách sạn Mường Thanh", "coords": [21.4006, 103.0227], "desc": "Khám phá ngôi làng cổ xinh đẹp của người H'Mông bên thác nước thơ mộng." }
+        { "idx": 6, "type": "culture", "name": "Bản Cát Cát", "coords": [22.3297, 103.8321], "desc": "Khám phá ngôi làng cổ xinh đẹp của người H'Mông. Bạn sẽ được chiêm ngưỡng những guồng nước khổng lồ, thác Tiên Sa thơ mộng, xem biểu diễn văn nghệ truyền thống và tìm hiểu nghề dệt vải bằng sáp ong tỉ mỉ." },
+        { "idx": 7, "type": "nature", "name": "Cổng Trời Ô Quy Hồ", "coords": [22.3551, 103.7630], "desc": "Dừng chân tại đỉnh đèo Ô Quy Hồ - một trong 'Tứ đại đỉnh đèo' của Việt Nam. Nơi đây sở hữu khung cảnh ngoạn mục với những biển mây bồng bềnh và là điểm ngắm hoàng hôn rực rỡ nhất trên dãy Hoàng Liên Sơn." },
+        { "idx": 8, "type": "hotel", "name": "Khách sạn Mường Thanh", "coords": [21.4006, 103.0227], "desc": "Di chuyển về thành phố Điện Biên Phủ và nhận phòng tại khách sạn Mường Thanh. Nghỉ ngơi và chuẩn bị cho hành trình khám phá những trang sử vẻ vang của dân tộc tại vùng đất lịch sử này." }
       ]
     },
     "day_3": {
-      "label": "Ngày 3: Sa Pa - Điện Biên",
+      "label": "Ngày 3: Điện Biên - Mộc Châu",
       "locations": [
-          { "idx": 9, "type": "nature", "name": "Đèo Pha Đin", "coords": [21.5562, 103.5195], "desc": "Vượt cung đường đèo huyền thoại nối liền hai tỉnh Sơn La và Điện Biên." },
-          { "idx": 10, "type": "history", "name": "Bảo tàng Chiến thắng Điện Biên Phủ", "coords": [21.3807, 103.0152], "desc": "Chiêm ngưỡng bức tranh Panorama tái hiện toàn cảnh chiến dịch chấn động địa cầu." },
-          { "idx": 11, "type": "history", "name": "Hầm Đờ Cát (De Castries)", "coords": [21.3848, 103.0107], "desc": "Thăm sở chỉ huy quân đội Pháp, minh chứng lịch sử cho sự thất bại của thực dân." },
-          { "idx": 12, "type": "history", "name": "Đồi A1", "coords": [21.3828, 103.0174], "desc": "Căn cứ điểm quan trọng nhất, nơi diễn ra những trận đánh ác liệt nhất năm 1954." },
-          { "idx": 13, "type": "hotel", "name": "Glenda Tower Mộc Châu Hotel", "coords": [20.8518, 104.6227], "desc": "Vượt cung đường đèo huyền thoại nối liền hai tỉnh Sơn La và Điện Biên." }
+        { "idx": 9, "type": "nature", "name": "Đèo Pha Đin", "coords": [21.5562, 103.5195], "desc": "Vượt 'nơi tiếp giáp giữa trời và đất' - đèo Pha Đin. Cung đường đèo huyền thoại này không chỉ có địa hình hiểm trở, uốn lượn mà còn gắn liền với lịch sử thồ hàng, tải đạn trong chiến dịch Điện Biên Phủ năm xưa." },
+        { "idx": 10, "type": "history", "name": "Bảo tàng Chiến thắng Điện Biên Phủ", "coords": [21.3807, 103.0152], "desc": "Tham quan công trình kiến trúc hình nón cụt độc đáo. Điểm nhấn là bức tranh Panorama 'Chiến dịch Điện Biên Phủ' lớn nhất thế giới, tái hiện sống động và đầy cảm xúc 56 ngày đêm 'khoét núi, ngủ hầm' của quân dân ta." },
+        { "idx": 11, "type": "history", "name": "Hầm Đờ Cát (De Castries)", "coords": [21.3848, 103.0107], "desc": "Tham quan căn hầm kiên cố từng là trung tâm đầu não của tập đoàn cứ điểm Điện Biên Phủ. Tận mắt chứng kiến kiến trúc hầm mái vòm sắt vững chãi - nơi chứng kiến thời khắc tướng De Castries đầu hàng quân đội Việt Nam." },
+        { "idx": 12, "type": "history", "name": "Đồi A1", "coords": [21.3828, 103.0174], "desc": "Đặt chân lên cứ điểm quan trọng nhất của thực dân Pháp. Tại đây vẫn còn lưu giữ dấu tích 'hố bộc phá' nghìn cân và hệ thống hầm hào chằng chịt, minh chứng cho sự hy sinh và lòng quả cảm anh dũng của các chiến sĩ." },
+        { "idx": 13, "type": "hotel", "name": "Glenda Tower Mộc Châu Hotel", "coords": [20.8518, 104.6227], "desc": "Đến với cao nguyên Mộc Châu, nhận phòng tại Glenda Tower. Khách sạn sở hữu kiến trúc tân cổ điển sang trọng, cung cấp tầm nhìn bao quát toàn cảnh thị trấn Mộc Châu yên bình và mát mẻ." }
       ]
     },
     "day_4": {
-      "label": "Ngày 4: Điện Biên - Mộc Châu",
+      "label": "Ngày 4: Khám phá Cao nguyên Mộc Châu",
       "locations": [
-        { "idx": 14, "type": "sightseeing", "name": "Cầu kính Bạch Long", "coords": [20.8491, 104.5702], "desc": "Trải nghiệm đi bộ trên cầu kính dài nhất thế giới giữa thung lũng xanh mướt." },
-        { "idx": 15, "type": "nature", "name": "Thác Dải Yếm", "coords": [20.8129, 104.5915], "desc": "Chiêm ngưỡng vẻ đẹp dịu dàng như dải lụa của thác nước giữa cao nguyên." },
-        { "idx": 16, "type": "nature", "name": "Đồi chè Mộc Châu", "coords": [20.8323, 104.6924], "desc": "Chụp ảnh tại đồi chè trái tim bạt ngàn, biểu tượng của cao nguyên Mộc Châu." },
-        { "idx": 17, "type": "culture", "name": "Rừng thông Bản Áng", "coords": [20.8286, 104.6323], "desc": "Tận hưởng không khí trong lành tại 'Đà Lạt thu nhỏ' của vùng Tây Bắc." },
-        { "idx": 18, "type": "hotel", "name": "Glenda Tower Mộc Châu Hotel", "coords": [20.8518, 104.6227], "desc": "Vượt cung đường đèo huyền thoại nối liền hai tỉnh Sơn La và Điện Biên." },
-        { "idx": 19, "type": "market", "name": "Phố đi bộ Mộc Châu", "coords": [20.8424, 104.6656], "desc": "Hòa mình vào không gian văn hóa cộng đồng và ẩm thực đêm sôi động." },
-        { "idx": 20, "type": "hotel", "name": "Glenda Tower Mộc Châu Hotel", "coords": [20.8518, 104.6227], "desc": "Vượt cung đường đèo huyền thoại nối liền hai tỉnh Sơn La và Điện Biên." }
+        { "idx": 14, "type": "sightseeing", "name": "Cầu kính Bạch Long", "coords": [20.8491, 104.5702], "desc": "Thử thách lòng can đảm trên cây cầu kính đi bộ dài nhất thế giới. Với tổng chiều dài 632m bắc qua thung lũng sâu, bạn sẽ có cảm giác như đang dạo bước trên mây và thu trọn vẻ đẹp hoang sơ của núi rừng vào tầm mắt." },
+        { "idx": 15, "type": "nature", "name": "Thác Dải Yếm", "coords": [20.8129, 104.5915], "desc": "Chiêm ngưỡng 'báu vật' của Mộc Châu với dòng thác trắng xóa đổ xuống từ độ cao hơn 100m. Thác đẹp nhất vào mùa nước đổ, trông xa tựa như dải yếm lụa mềm mại của người con gái Thái vắt ngang triền đồi." },
+        { "idx": 16, "type": "nature", "name": "Đồi chè Mộc Châu", "coords": [20.8323, 104.6924], "desc": "Lạc giữa những nương chè xanh mướt trải dài vô tận. Bạn có thể check-in tại đồi chè trái tim - biểu tượng cho tình yêu và sức sống bền bỉ của vùng cao nguyên, đồng thời thưởng thức hương vị trà ô long trứ danh." },
+        { "idx": 17, "type": "culture", "name": "Rừng thông Bản Áng", "coords": [20.8286, 104.6323], "desc": "Thả mình vào không gian tĩnh lặng của hồ nước trong xanh và rừng thông cao vút. Nơi đây được ví như 'Đà Lạt thu nhỏ' của Tây Bắc, rất phù hợp cho những hoạt động dạo bộ, đạp xe và chụp ảnh theo phong cách thơ mộng." },
+        { "idx": 18, "type": "hotel", "name": "Glenda Tower Mộc Châu Hotel", "coords": [20.8518, 104.6227], "desc": "Trở về khách sạn nghỉ ngơi. Glenda Tower với các tiện ích cao cấp như bể bơi bốn mùa, spa sẽ giúp bạn hồi phục năng lượng sau một ngày dài khám phá các địa danh nổi tiếng tại Mộc Châu." },
+        { "idx": 19, "type": "market", "name": "Phố đi bộ Mộc Châu", "coords": [20.8424, 104.6656], "desc": "Trải nghiệm không gian văn hóa cộng đồng về đêm. Tại đây thường xuyên diễn ra các tiết mục múa xòe, nhảy sạp và bày bán rất nhiều đặc sản vùng miền, quà lưu niệm đặc trưng của các dân tộc Thái, H'Mông." },
+        { "idx": 20, "type": "hotel", "name": "Glenda Tower Mộc Châu Hotel", "coords": [20.8518, 104.6227], "desc": "Nghỉ đêm cuối cùng tại Mộc Châu trong không gian ấm cúng và tiện nghi của Glenda Tower, tận hưởng khí hậu trong lành của vùng cao nguyên trước khi trở về." }
       ]
     },
     "day_5": {
       "label": "Ngày 5: Mai Châu - Hòa Bình - Hà Nội",
       "locations": [
-        { "idx": 21, "type": "market", "name": "Chợ phiên Mai Châu", "coords": [20.6598, 104.0829], "desc": "Mua sắm thổ cẩm và đặc sản của người Thái tại thung lũng Mai Châu." },
-        { "idx": 22, "type": "nature", "name": "Đèo Đá Trắng (Đèo Thung Khe)", "coords": [20.6595, 105.1438], "desc": "Check-in tại ngọn đèo có sắc trắng tựa như tuyết bao phủ quanh năm." },
-        { "idx": 23, "type": "end", "name": "Hà Nội", "coords": [21.0285, 105.8542], "desc": "Trở về Hà Nội, kết thúc hành trình khám phá tinh hoa Tây Bắc." }
+        { "idx": 21, "type": "market", "name": "Chợ phiên Mai Châu", "coords": [20.6598, 104.0829], "desc": "Ghé thăm chợ phiên vào buổi sớm mai tại thung lũng Mai Châu. Đây là nơi bạn có thể chọn mua những tấm vải dệt tay tinh xảo, cơm lam, rượu cần và cảm nhận nhịp sống yên bình của đồng bào dân tộc Thái." },
+        { "idx": 22, "type": "nature", "name": "Đèo Đá Trắng (Đèo Thung Khe)", "coords": [20.6595, 105.1438], "desc": "Check-in tại 'ngọn đồi tuyết' độc đáo của Hòa Bình. Do quá trình xẻ núi đá vôi, những mảng đá trắng bao phủ khắp sườn đèo tạo nên khung cảnh tựa như mùa đông Châu Âu giữa lòng Tây Bắc." },
+        { "idx": 23, "type": "end", "name": "Hà Nội", "coords": [21.0285, 105.8542], "desc": "Xe đưa đoàn về lại điểm hẹn ban đầu tại Hà Nội. Kết thúc hành trình khám phá tinh hoa Tây Bắc với những kỷ niệm khó quên về thiên nhiên hùng vĩ và con người nồng hậu. Hẹn gặp lại quý khách!" }
       ]
     }
   }
