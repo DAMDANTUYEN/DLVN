@@ -5,7 +5,7 @@ const map = L.map('map', {
     bounceAtZoomLimits: true
 }).setView([21.0285, 105.8542], 13);
 
-// Lớp bản đồ tối giản giúp tập trung vào hành trình
+// Sử dụng lớp nền bản đồ tối giản Positron
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png').addTo(map);
 
 const iconMap = { 
@@ -15,7 +15,7 @@ const iconMap = {
 
 let allLocations = [], globalIndex = 0, markers = [], routeControl = null, movingMarker = null;
 
-// Tải dữ liệu hành trình từ data.json
+// Tải dữ liệu từ data.json
 fetch('../data.json').then(res => res.json()).then(data => {
     Object.keys(data.itinerary).forEach(dayKey => {
         data.itinerary[dayKey].locations.forEach(loc => {
@@ -45,7 +45,8 @@ function renderMarkers() {
     allLocations.forEach((loc, i) => {
         const icon = L.divIcon({
             className: 'custom-div-icon',
-            // Loại bỏ iconSize cố định để CSS tự xử lý độ rộng
+            // iconSize: [null, null] cho phép CSS điều khiển kích thước dựa trên độ dài chữ
+            iconSize: [null, null], 
             html: `<div class="marker-card" id="marker-ui-${i}">
                         <div class="marker-icon">${iconMap[loc.type] || "📍"}</div>
                         <div class="marker-label">${loc.name}</div>
@@ -71,10 +72,9 @@ async function navigate(direction) {
 
     markers[globalIndex].closePopup();
     
-    // Xử lý di chuyển mượt mà trên di động
-    if (distance < 15000) { 
-        let normalTime = (distance / 15) * 1000;
-        let finalTime = normalTime > 4000 ? 4000 : normalTime;
+    if (distance < 20000) { 
+        let finalTime = (distance / 15) * 1000;
+        finalTime = finalTime > 4000 ? 4000 : finalTime;
         await animateJourney(start, end, finalTime);
     } else {
         await flyToPoint(end);
@@ -98,6 +98,7 @@ function animateJourney(start, end, duration) {
         routeControl.on('routesfound', function(e) {
             const coords = e.routes[0].coordinates;
             if (movingMarker) map.removeLayer(movingMarker);
+            // Sử dụng xe BMW bay nav.png
             movingMarker = L.marker(coords[0], { icon: L.divIcon({ className: 'moving-pulse' }) }).addTo(map);
 
             const startTime = performance.now();
@@ -132,10 +133,8 @@ function jumpToDay(dayKey) {
     if (dayLocs.length > 0) {
         const bounds = L.latLngBounds(dayLocs.map(l => l.latLng));
         map.fitBounds(bounds, { padding: [60, 150], maxZoom: 14, duration: 1.5 });
-        
         globalIndex = allLocations.findIndex(l => l.dayKey === dayKey);
         updateState();
-        
         document.getElementById('btn-' + dayKey).scrollIntoView({ behavior: 'smooth', inline: 'center' });
         setTimeout(() => markers[globalIndex].openPopup(), 1600);
     }
@@ -143,7 +142,7 @@ function jumpToDay(dayKey) {
 
 function updateState() {
     const current = allLocations[globalIndex];
-    document.getElementById('pointName').innerText = current.name.toUpperCase();
+    document.getElementById('pointName').innerText = current.name;
     
     document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
     const activeBtn = document.getElementById('btn-' + current.dayKey);
