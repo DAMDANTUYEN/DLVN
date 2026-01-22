@@ -45,11 +45,12 @@ function renderMarkers() {
     allLocations.forEach((loc, i) => {
         const icon = L.divIcon({
             className: 'custom-div-icon',
+            // Loại bỏ iconSize cố định để CSS tự xử lý độ rộng
             html: `<div class="marker-card" id="marker-ui-${i}">
                         <div class="marker-icon">${iconMap[loc.type] || "📍"}</div>
                         <div class="marker-label">${loc.name}</div>
                     </div>`,
-            iconSize: [120, 40], iconAnchor: [20, 20]
+            iconAnchor: [20, 20] 
         });
         const m = L.marker(loc.latLng, { icon }).addTo(map)
             .bindPopup(`<strong>${loc.name}</strong><br>${loc.desc}`, {
