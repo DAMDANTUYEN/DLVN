@@ -44,7 +44,7 @@
     "day_5": {
       "label": "Ngày 5: Mai Châu - Hòa Bình - Hà Nội",
       "locations": [
-        { "idx": 21, "type": "market", "name": "Chợ phiên Mai Châu", "coords": [20.6598, 104.0829], "desc": "Ghé thăm chợ phiên vào buổi sớm mai tại thung lũng Mai Châu. Đây là nơi bạn có thể chọn mua những tấm vải dệt tay tinh xảo, cơm lam, rượu cần và cảm nhận nhịp sống yên bình của đồng bào dân tộc Thái." },
+        { "idx": 21, "type": "market", "name": "Chợ phiên Mai Châu", "coords": [20.6716, 105.0052], "desc": "Ghé thăm chợ phiên vào buổi sớm mai tại thung lũng Mai Châu. Đây là nơi bạn có thể chọn mua những tấm vải dệt tay tinh xảo, cơm lam, rượu cần và cảm nhận nhịp sống yên bình của đồng bào dân tộc Thái." },
         { "idx": 22, "type": "nature", "name": "Đèo Đá Trắng (Đèo Thung Khe)", "coords": [20.6595, 105.1438], "desc": "Check-in tại 'ngọn đồi tuyết' độc đáo của Hòa Bình. Do quá trình xẻ núi đá vôi, những mảng đá trắng bao phủ khắp sườn đèo tạo nên khung cảnh tựa như mùa đông Châu Âu giữa lòng Tây Bắc." },
         { "idx": 23, "type": "end", "name": "Hà Nội", "coords": [21.0285, 105.8542], "desc": "Xe đưa đoàn về lại điểm hẹn ban đầu tại Hà Nội. Kết thúc hành trình khám phá tinh hoa Tây Bắc với những kỷ niệm khó quên về thiên nhiên hùng vĩ và con người nồng hậu. Hẹn gặp lại quý khách!" }
       ]
