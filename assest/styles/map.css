@@ -8,7 +8,7 @@
 body, html { height: 100%; margin: 0; font-family: -apple-system, system-ui, sans-serif; overflow: hidden; background: #000; }
 #map { height: 100vh; width: 100%; z-index: 1; }
 
-/* Day Selector - Thanh chọn ngày cuộn ngang */
+/* Day Selector */
 .day-selector {
     position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
     display: flex; gap: 10px; overflow-x: auto; padding: 15px 15px 25px;
@@ -25,7 +25,7 @@ body, html { height: 100%; margin: 0; font-family: -apple-system, system-ui, san
 }
 .day-btn.active { background: var(--gold); color: white; transform: scale(1.05); }
 
-/* Bottom Control Dock - Bảng điều khiển dưới đáy di động */
+/* Bottom Control Dock */
 .controls {
     position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000;
     background: var(--glass); 
@@ -38,41 +38,55 @@ body, html { height: 100%; margin: 0; font-family: -apple-system, system-ui, san
 
 .btn {
     background: var(--dark); color: var(--gold); border: none;
-    height: 54px; padding: 0 25px; border-radius: 18px;
-    font-weight: 800; font-size: 15px; text-transform: uppercase;
-    letter-spacing: 0.5px; 
+    height: 54px; padding: 0 20px; border-radius: 18px;
+    font-weight: 800; font-size: 14px; text-transform: uppercase;
 }
 .btn:active { opacity: 0.7; transform: scale(0.95); }
 .btn:disabled { background: #e0e0e0; color: #999; }
 
-#status {
-    font-size: 16px; font-weight: 900; color: var(--dark);
-    text-align: center; line-height: 1.2;
-}
+#status { flex: 1; margin: 0 10px; text-align: center; }
 #status span { display: block; font-size: 11px; color: var(--gold); text-transform: uppercase; margin-bottom: 2px; }
-
-/* Marker UI - Thiết kế điểm đánh dấu hành trình */
-.marker-card {
-    display: flex; align-items: center; background: white;
-    border: 2px solid var(--gold); border-radius: 30px;
-    padding: 3px 12px 3px 3px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+#pointName {
+    font-size: 14px; font-weight: 900; color: var(--dark);
+    line-height: 1.2; word-break: break-word;
 }
+
+/* --- FIX LỖI TRÀN CHỮ: HIỂN THỊ HẾT NỘI DUNG --- */
+.marker-card {
+    display: flex; align-items: center; 
+    background: white; border: 2px solid var(--gold); 
+    border-radius: 20px; padding: 4px 12px 4px 4px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    
+    /* Cho phép mở rộng chiều rộng và tự động xuống dòng */
+    width: max-content;
+    max-width: 200px; /* Giới hạn để không che hết bản đồ */
+    white-space: normal; /* Cho phép xuống dòng */
+    word-wrap: break-word;
+}
+
 .marker-icon {
-    background: var(--gold); width: 32px; height: 32px;
-    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; background: var(--gold); 
+    width: 32px; height: 32px; border-radius: 50%; 
+    display: flex; align-items: center; justify-content: center;
     font-size: 18px;
 }
-.marker-label { margin-left: 8px; font-weight: 800; font-size: 12px; color: var(--dark); white-space: nowrap; }
+
+.marker-label { 
+    margin-left: 8px; font-weight: 800; font-size: 11px; 
+    color: var(--dark); line-height: 1.2;
+    overflow: visible; /* Hiện toàn bộ chữ */
+}
 
 .active-marker .marker-card { background: var(--dark); border-color: var(--gold); }
 .active-marker .marker-label { color: var(--gold); }
 
-/* Chấm định vị di chuyển mô phỏng xe của VinaVista */
+/* --- XE BMW BAY CỦA VINAVISTA --- */
 .moving-pulse {
-    background: var(--gold); 
-    background-image: url('../images/nav.png'); /* Sử dụng hình ảnh xe BMW của bạn */
-    background-size: cover;
-    border: 2px solid white; border-radius: 50%;
-    width: 30px !important; height: 30px !important;
-    box-shadow: 0 0 15px var(--gold);
+    background-image: url('../images/nav.png'); 
+    background-size: contain; background-repeat: no-repeat;
+    background-position: center;
+    width: 45px !important; height: 45px !important;
+    filter: drop-shadow(0 0 8px var(--gold));
+    z-index: 1000 !important;
 }
