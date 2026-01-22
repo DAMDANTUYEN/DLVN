@@ -2,14 +2,14 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>VinaVista - Trung Tâm Hành Trình</title>
     <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assest/styles/portal.css">
 </head>
 <body>
 
-    <video autoplay muted loop playsinline id="bg-video">
+    <video autoplay muted loop playsinline preload="auto" id="bg-video" poster="../assest/images/portal_bg.jpeg">
         <source src="../assest/videos/background.mp4" type="video/mp4">
     </video>
     <div class="video-overlay"></div>
@@ -30,7 +30,7 @@
             </a>
 
             <a href="../page/GUIDEBOOK.html" class="dark-glass-card">
-                <div class="card-icon">📖</div>
+                <div class="card-icon">📚</div>
                 <div class="card-text">
                     <h3>GUIDE BOOK</h3>
                     <p>Cẩm nang trải nghiệm địa phương trọn vẹn</p>
@@ -51,5 +51,16 @@
         </footer>
     </div>
 
+    <script>
+        window.addEventListener('load', function() {
+            const video = document.getElementById('bg-video');
+            video.play().catch(function(error) {
+                console.log("Autoplay bị chặn bởi trình duyệt: ", error);
+                document.body.addEventListener('click', function() {
+                    video.play();
+                }, { once: true });
+            });
+        });
+    </script>
 </body>
 </html>
