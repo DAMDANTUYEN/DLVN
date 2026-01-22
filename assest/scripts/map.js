@@ -88,18 +88,29 @@ async function navigate(direction) {
 function animateJourney(start, end, duration) {
     return new Promise((resolve) => {
         if (routeControl) map.removeControl(routeControl);
+        
         routeControl = L.Routing.control({
             waypoints: [start, end],
             createMarker: () => null,
-            lineOptions: { styles: [{ color: '#D4AF37', weight: 6, opacity: 0.6 }] },
-            addWaypoints: false, show: false
+            // ĐƯỜNG DẪN MÀU TÍM HOÀNG GIA NỔI BẬT
+            lineOptions: { 
+                styles: [
+                    { color: '#001226', weight: 11, opacity: 0.5 }, // Viền Navy đậm (Casing)
+                    { color: '#8E44AD', weight: 6, opacity: 1 }      // Đường Tím chính (Main Path)
+                ] 
+            },
+            addWaypoints: false, 
+            show: false
         }).addTo(map);
 
         routeControl.on('routesfound', function(e) {
             const coords = e.routes[0].coordinates;
             if (movingMarker) map.removeLayer(movingMarker);
-            // Sử dụng xe BMW bay nav.png
-            movingMarker = L.marker(coords[0], { icon: L.divIcon({ className: 'moving-pulse' }) }).addTo(map);
+            
+            // Xe BMW của VinaVista
+            movingMarker = L.marker(coords[0], { 
+                icon: L.divIcon({ className: 'moving-pulse' }) 
+            }).addTo(map);
 
             const startTime = performance.now();
             function step(now) {
